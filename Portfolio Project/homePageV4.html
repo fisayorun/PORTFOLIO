@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./homePageV4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="../Images/FISaYO RUNSEWE (1).png"/>
+    <title>Fisayo Runsewe Portfolio</title>
+</head>
+<body>
+
+    <!-- Navbar & Hamburger menu -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="./homePageV4.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#about-me"><i class="fa-solid fa-face-grin-wink"></i>About Me</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-computer"></i>Projects</a></li>
+            <li><a href="./contactV3.html"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html" class="navname">Fisayo Runsewe
+                <img class="iconlogo" src="../Images/FISaYO RUNSEWE (1).png" alt="">
+            </a></li>
+            <li class="hideOnMobile"><a href="./homePageV4.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li class="hideOnMobile"><a href="#about-me"><i class="fa-solid fa-face-grin-wink"></i>About Me</a></li>
+            <li class="hideOnMobile"><a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a></li>
+            <li class="hideOnMobile"><a href="#projects"><i class="fa-solid fa-computer"></i>Projects</a></li>
+            <li class="hideOnMobile"><a href="./contactV3.html"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"></a><svg class="bars" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
+    </nav>
+
+    
+    <!-- Desktop image and header -->
+    <div class="home-container">
+        <img src="../Images/desktop.jpeg" alt="desktop" style="width:100%">
+        <h1 class="overlay-roletext">Web Designer & Software Developer</h1>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about-me_heading">
+        <h1 class="about-me_heading"  id="about-me">About Me</h1>
+    </div>
+
+    <div class="about-me">
+          
+            <div1 class="aboutbox">
+                <a href="./aboutme.html" target="_blank"><img class="profilepic" src="../Images/profile_pic.jpeg" alt=""></a>
+
+            </div1>
+            <div class="aboutinfo">
+                <h2>Hi there, thanks for taking a stop on my page. <strong>I'm Fisayo</strong> and I love all things creative.</h2>
+                <p>Sports, Media & Computing were my initial interests in this journey we call life. Although these are all still passions of mine, luckily I have learned to hone the energy previously used on these activities into one focus: <strong>Software Development</strong>.</p>
+                <p>Software Development is <strong>fun and challenging</strong>, it allows me to express <strong>creativity</strong>. Because of this, transitioning into this career path has become seamless.</p>
+                <p>Having completed my <strong>12 Week Bootcamp</strong> I have learned programming languages such as <strong>JavaScript and Python</strong>. I am also consistently practising my coding and projects to further my skillset.</p>
+                <p>Moving forward, I plan to use my skills and passion to pursue opportunities thats helps me reach my goal of becoming a seasoned <strong>Senior Software Developer</strong>.</p>
+
+            </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills_heading">
+        <h1 class="skills_heading" id="skills">Skills</h1>
+    </div>
+
+    <div class="skills">
+            <div id="icons">
+                <i class="fa-brands fa-html5">HTML</i>
+                <i class="fa-brands fa-css3-alt">CSS</i>
+                <i class="fa-brands fa-js">JAVASCRIPT</i>
+                <i class="fa-solid fa-database">MYSQL</i>
+                <i class="fa-brands fa-python">PYTHON</i>
+            </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <h1 class="projects_heading">Projects</h1>
+    </div>
+
+    <div class="container">
+        <div1 class="box box1">
+            <video autoplay muted loop class="vidJS">
+                <source src="../Videos/ProjectJS.mp4" type="video/mp4">
+            </video>
+            <p class="projtitle">JavaScript Website</p>
+            <p>Have fun testing your knowledge with this intreactive football quiz.</p>
+            <div>
+                <a href="https://fisayorun.github.io/FOOTBALL-QUIZ/" target="_blank" class="button">Enter</a>
+            </div>
+        </div1>
+        <div2 class="box box2">
+            <video autoplay muted loop class="vidSQL">
+                <source src="../Videos/ProjectSQL.mp4" type="video/mp4">
+            </video>
+            <p class="projtitle">MySQL Database</p>
+            <p>Access relational databases. View tables and information.</p>
+            <a href="https://drive.google.com/file/d/1kg_AdMg00FRP5LamkQ5VnCEPYhXzkkSr/view?usp=drive_link" target="_blank" class="button">Enter</a>
+        </div2>
+        <div3 class="box box3">
+            <video autoplay muted loop class="vidPY">
+                <source src="../Videos/ProjectPY.mp4" type="video/mp4">
+            </video>
+            <p class="projtitle">Python Application</p>
+            <p>View and adjust some of my favourite TV Shows as you see fit.</p>
+            <a href="./series.html" target="_blank" class="button">Enter</a>
+        </div3>
+    </div>
+    <br>
+    <br>
+
+    <!-- Github Button -->
+    <div class="github">
+        <a href="https://github.com/fisayorun" target="_blank" class="buttongithub">See more on GitHub</a>
+    </div>
+    <br>
+    <br>
+    
+    
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex" 
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none"  
+        } 
+     </script>   
+
+   <script src="./homePageV4.js"></script> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hamburgerV2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Fisayo Runsewe</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About Me</a></li>
+            <li class="hideOnMobile"><a href="#">Skills</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"></a><svg class="bars" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
+    </nav>
+
+   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cumque voluptates tempora enim, provident quod quasi officia accusantium suscipit fuga quis natus culpa vel praesentium quaerat, saepe, totam rerum delectus omnis recusandae esse excepturi velit sequi. Itaque rem nesciunt quasi sunt id laborum sit rerum fugiat odit modi unde dignissimos blanditiis tempora voluptatibus eum quam voluptate, nobis veniam. Molestiae repudiandae, mollitia reiciendis atque debitis, officiis soluta deserunt blanditiis qui repellat facilis pariatur molestias, adipisci nesciunt sit ut dolor. Cupiditate vitae ullam nihil reprehenderit eaque unde, laboriosam necessitatibus animi aut rerum amet distinctio assumenda esse quaerat sint eum iusto deserunt. Ea sunt consectetur tempora, minus hic inventore libero pariatur esse repellat nulla, voluptates voluptatum, iste exercitationem! Ad inventore accusamus eos repellendus nihil illo odit delectus. Ipsum dolorem eaque, quasi repellat error veritatis porro, quam nobis iure omnis ipsam aliquam voluptas quaerat quia blanditiis, incidunt pariatur quo voluptatem. Eum quod odit deleniti harum vel suscipit perferendis, quasi incidunt praesentium fugit, consequuntur nihil, accusantium ducimus. Error a nihil quam officiis cumque maiores reiciendis tempore saepe, eum at ducimus velit ullam alias ea, fugiat quasi hic architecto. Hic facilis totam, ipsam explicabo, quisquam optio numquam error pariatur earum, saepe asperiores natus doloremque alias odit!
+   
+ <script>
+    function showSidebar(){
+        const sidebar = document.querySelector(".sidebar")
+        sidebar.style.display = "flex" 
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector(".sidebar")
+        sidebar.style.display = "none"  
+    } 
+ </script>   
+    <script src="./hamburgerV2.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+nav {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+
+    background: rgba( 138, 102, 73, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+}
+
+nav ul li:first-child{
+    list-style: none;
+    text-decoration: none;
+    float: left;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    float: right;
+    margin: 5px 5px;
+    padding: 10px;
+}
+
+nav ul li{
+    list-style: none;
+}

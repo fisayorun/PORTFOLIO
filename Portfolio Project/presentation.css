@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/* -- Navbar & Hamburger Menu */
+nav{
+    background: rgba( 138, 102, 73, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+
+position: sticky;
+top: 0;
+height: 60px;
+width: 100%;
+
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+    font-weight: 600;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+   color: darkorange; 
+}
+
+nav li:first-child{
+    margin-right:auto
+}
+
+.navname{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.iconlogo{
+    transform: scale(0.1);
+    margin-left: -215px
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba( 138, 102, 73, 0.25 ); 
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* .sidebar li{
+    width: 100%;
+} 
+
+.sidebar a{
+    width: 100%;
+} */
+
+.menu-button{
+    margin-top: -50px;
+    display: none;
+}
+
+.menu-button:hover{
+    cursor: pointer;
+    color: darkorange;
+}
+
+@media(max-width: 800px){
+   .hideOnMobile{
+    display: none;
+   }
+   .menu-button{
+    display: block;
+   } 
+}
+
+@media(max-width: 400px){
+    .sidebar{
+     width: 100%;
+    } 
+ }
+
+
+.home-container {
+    position: flex;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    float: left;
+    
+}
+
+.overlay-roletext {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    transform: translate(-50%, -50%);
+    margin-top: -70px;
+}
+
+.videos{
+    background-color: rgb(183, 183, 183);
+    display: flex;
+    width: 100%;
+}
+
